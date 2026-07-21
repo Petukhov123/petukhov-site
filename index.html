@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Архитектор финансов для роста без потери маржи — Максим Петухов</title>
-<meta name="description" content="Cash-flow модель, налоговый комплаенс, unit-экономика — для собственников растущего бизнеса со сложной структурой.">
+<title>AI-compliant финансовая инфраструктура для растущих компаний — Максим Петухов</title>
+<meta name="description" content="Связываю разрозненные данные бизнеса — банки, CRM, склад, учёт — в единую сверяемую модель и строю причинный анализ поверх неё. Для растущих компаний 20–100 человек, включая мультиюрисдикцию.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -414,6 +414,13 @@
   .guarantee__eyebrow{ font-size:12px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--c-accent); margin-bottom:10px; display:block; }
   .guarantee__title{ font-family:var(--font-serif); font-size:1.35rem; font-weight:500; color:var(--c-text); margin-bottom:12px; line-height:1.3; }
   .guarantee__text{ font-size:15.5px; color:var(--c-ink); line-height:1.7; font-weight:300; max-width:640px; }
+
+  /* ─── FORM VALIDATION / SUCCESS ─── */
+  .form-error{ font-size:13px; color:#B4433A; margin-top:6px; line-height:1.4; }
+  .form-error--global{ margin-top:14px; text-align:center; }
+  .form-success{ text-align:center; padding:36px 20px; }
+  .form-success__title{ font-family:var(--font-serif); font-size:1.4rem; font-weight:500; color:var(--c-text); margin-bottom:10px; }
+  .form-success__text{ font-size:15px; color:var(--c-muted); line-height:1.6; }
 </style>
 </head>
 <body>
@@ -423,13 +430,12 @@
     <span class="topbar__name">Максим Петухов</span>
     <ul class="topbar__links">
       <li><a href="#whom">Для кого</a></li>
-      <li><a href="#products">Продукты</a></li>
-      <li><a href="#how">Как это работает</a></li>
-      <li><a href="#ai">AI-контур</a></li>
+      <li><a href="#products">Как строится работа</a></li>
+      <li><a href="#ai">Два слоя</a></li>
       <li><a href="#trust">Опыт</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a href="#cta" class="topbar__cta">Получить разбор и план</a>
+    <a href="#cta" class="topbar__cta">Записаться на диагностику</a>
   </div>
 </header>
 
@@ -439,12 +445,12 @@
 <section class="hero" id="hero" data-screen-label="01 — Hero">
   <div class="hero__inner">
     <div>
-        <h1 class="hero__title reveal">Архитектор финансов для роста без потери маржи</h1>      <p class="hero__subtitle reveal">Для собственников бизнеса со сложной структурой. Первый шаг — <strong style="font-weight:500; color:var(--c-text);">Финансовый План-Разбор</strong>: 3 скрытые точки утечки вашей маржи, бесплатно, за 60 минут.</p>
-      <a href="#cta" class="btn-primary reveal">Получить разбор и план →</a>
+        <h1 class="hero__title reveal">Строю AI-compliant финансовую инфраструктуру для растущих компаний</h1>      <p class="hero__subtitle reveal">Связываю банки, CRM, склад и учёт в единую сверяемую модель — и причинный анализ поверх неё: не «выручка упала», а <em>почему</em> упала. Первый шаг — <strong style="font-weight:500; color:var(--c-text);">диагностика</strong>: где ваши данные расходятся и что это стоит бизнесу. Бесплатно, 60 минут.</p>
+      <a href="#cta" class="btn-primary reveal">Записаться на диагностику →</a>
     </div>
     <div class="hero__visual reveal" aria-hidden="true">
       <div class="hero__card">
-        <div class="hero__card-title">Маржа по направлениям · помесячно</div>
+        <div class="hero__card-title">Единая модель · все юрлица и валюты</div>
         <div class="hero__chart">
           <div class="hero__bar" style="height:42%"></div>
           <div class="hero__bar" style="height:55%"></div>
@@ -462,7 +468,7 @@
         <div class="hero__chart-legend"><span>Янв</span><span>Дек</span></div>
       </div>
       <div class="hero__forecast">
-        <div class="hero__forecast-label">Прогноз кэша · 13 недель</div>
+        <div class="hero__forecast-label">What-if · прогноз кэша по сценариям</div>
         <div class="hero__forecast-row">
           <div class="hero__forecast-track"><div class="hero__forecast-fill" style="width:85%"></div></div>
           <div class="hero__forecast-val">нед. 1–4</div>
@@ -513,11 +519,11 @@
       <div class="whom-card whom-card--yes reveal">
         <h3>Это для вас, если:</h3>
         <div class="whom-list">
-          <div class="whom-item"><span class="whom-mark">—</span>несколько юрлиц в структуре</div>
-          <div class="whom-item"><span class="whom-mark">—</span>20+ человек в команде</div>
-          <div class="whom-item"><span class="whom-mark">—</span>клиенты работают с отсрочкой платежа</div>
-          <div class="whom-item"><span class="whom-mark">—</span>расчёты в нескольких валютах</div>
-          <div class="whom-item"><span class="whom-mark">—</span>есть инвесторы, перед которыми отчитываетесь</div>
+          <div class="whom-item"><span class="whom-mark">—</span>компания растёт: 20–100 человек в команде</div>
+          <div class="whom-item"><span class="whom-mark">—</span>несколько юрлиц или юрисдикций — РФ, Dubai, США, Кипр</div>
+          <div class="whom-item"><span class="whom-mark">—</span>данные живут в разных системах: банки, CRM, склад, учёт</div>
+          <div class="whom-item"><span class="whom-mark">—</span>есть бухгалтер или финменеджер, но единой картины нет</div>
+          <div class="whom-item"><span class="whom-mark">—</span>хотите использовать AI в финансах, но данные к этому не готовы</div>
         </div>
       </div>
       <div class="whom-card reveal">
@@ -525,7 +531,7 @@
         <div class="whom-list">
           <div class="whom-item"><span class="whom-mark">—</span>бизнес ещё не зарабатывает</div>
           <div class="whom-item"><span class="whom-mark">—</span>вас устраивает текущая прозрачность финансов</div>
-          <div class="whom-item"><span class="whom-mark">—</span>нужен антикризисный управляющий, а не архитектор роста</div>
+          <div class="whom-item"><span class="whom-mark">—</span>нужен антикризисный управляющий, а не система</div>
         </div>
       </div>
     </div>
@@ -537,13 +543,13 @@
   <div class="container--narrow">
     <div class="section-head reveal">
       <span class="eyebrow">Узнаёте?</span>
-      <h2 class="h2">Формулировки от собственников, с которыми мы говорили</h2>
+      <h2 class="h2">Формулировки от собственников, с которыми я говорил</h2>
     </div>
     <div class="pain-list">
-      <div class="pain-item reveal"><span class="pain-num">01</span><p>«Прибыльные на бумаге, а касса пустая».</p></div>
-      <div class="pain-item reveal"><span class="pain-num">02</span><p>«Маржа тает, а почему — непонятно».</p></div>
-      <div class="pain-item reveal"><span class="pain-num">03</span><p>«Не могу спрогнозировать дальше чем на неделю».</p></div>
-      <div class="pain-item reveal"><span class="pain-num">04</span><p>«Дебиторка высасывает энергию».</p></div>
+      <div class="pain-item reveal"><span class="pain-num">01</span><p>«Данные есть везде — картины нет нигде: банк своё, CRM своё, склад своё».</p></div>
+      <div class="pain-item reveal"><span class="pain-num">02</span><p>«Отчёт говорит: выручка упала. Почему упала — не говорит никто».</p></div>
+      <div class="pain-item reveal"><span class="pain-num">03</span><p>«Бухгалтер закрывает период задним числом, а решения нужно принимать вперёд».</p></div>
+      <div class="pain-item reveal"><span class="pain-num">04</span><p>«Пробовали AI-инструменты — они хотят готовую отчётность, которой у нас нет».</p></div>
     </div>
 
     <!-- GUARANTEE -->
@@ -553,8 +559,8 @@
       </div>
       <div>
         <span class="guarantee__eyebrow">Гарантия ценности времени</span>
-        <div class="guarantee__title">Если разбор не окупит ваши 60 минут — я его остановлю</div>
-        <p class="guarantee__text">Если за первые 15 минут Финансового План-Разбора вы не увидите как минимум два системных бага, из-за которых ваш бизнес теряет деньги, — я сам остановлю созвон и отправлю вам гайд по самодиагностике финансов — чтобы время всё равно было потрачено не зря. Ваше время — главный ресурс; я отношусь к нему так же.</p>
+        <div class="guarantee__title">Если диагностика не окупит ваши 60 минут — я её остановлю</div>
+        <p class="guarantee__text">Если за первые 15 минут диагностики вы не увидите как минимум два места, где ваши данные расходятся и это стоит бизнесу денег, — я сам остановлю созвон и отправлю вам гайд по самодиагностике финансов — чтобы время всё равно было потрачено не зря. Ваше время — главный ресурс; я отношусь к нему так же.</p>
       </div>
     </div>
   </div>
@@ -564,31 +570,31 @@
 <section id="products" class="section section--alt" data-screen-label="04 — Продукты">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Входные продукты</span>
-      <h2 class="h2">Конкретный результат за фиксированную цену</h2>
-      <p class="lead">Три входных продукта. Каждый закрывает одну боль и даёт результат, который видно.</p>
+      <span class="eyebrow">Продуктовая лестница</span>
+      <h2 class="h2">Три ступени — от диагностики до CFO-сопровождения</h2>
+      <p class="lead">Каждая ступень имеет самостоятельную ценность. Дальше первой идут только те, кому это нужно.</p>
     </div>
     <div class="products-grid">
       <div class="product-card reveal">
-        <div class="product-pain">Прибыль есть на бумаге, касса пустая — риск кассового разрыва не виден заранее</div>
-        <div class="product-name">Cash-flow модель + 13-недельный прогноз</div>
-        <div class="product-result">Cash-flow модель, понедельный прогноз на 13 недель, точки риска разрыва.</div>
-        <div class="product-price">₽100–150К<span>2 недели</span></div>
-        <div class="product-proof">«Годами лично вёл платёжный календарь холдинга — разрыв виден за недели, не по факту»</div>
+        <div class="product-pain">Шаг 1 · Понять, где вы сейчас</div>
+        <div class="product-name">Диагностика</div>
+        <div class="product-result">Карта ваших источников данных: где они расходятся, что это стоит бизнесу и что чинить первым. 60 минут со мной лично.</div>
+        <div class="product-price">Бесплатно<span>60 минут</span></div>
+        <div class="product-proof">«Провёл холдинг через due diligence на 3+ млрд ₽ — знаю, как выглядят финансы, которым доверяют»</div>
       </div>
       <div class="product-card reveal">
-        <div class="product-pain">На грани лимита УСН→НДС, несколько юрлиц — риск доначислений и штрафов</div>
-        <div class="product-name">Мониторинг налоговых рисков и compliance</div>
-        <div class="product-result">Карта налоговых рисков + отслеживание сроков и лимитов.</div>
-        <div class="product-price">₽150–200К<span>2–3 недели</span></div>
-        <div class="product-proof">«Два профильных диплома по налогам — ACCA по РФ и LLM МГИМО по международному праву»</div>
+        <div class="product-pain">Шаг 2 · Построить фундамент</div>
+        <div class="product-name">Setup — финансовая инфраструктура</div>
+        <div class="product-result">Связываю банки, CRM, склад и учёт в единую сверяемую модель. Все юрлица и валюты — в одной картине, которой можно доверять.</div>
+        <div class="product-price">Разово<span>условия — по итогам диагностики</span></div>
+        <div class="product-proof">«Строил финансовую систему с нуля дважды — в фарм-холдинге и на производстве»</div>
       </div>
       <div class="product-card reveal">
-        <div class="product-pain">Несколько продуктов, каналов или юрлиц — непонятно, что реально прибыльно</div>
-        <div class="product-name">Unit-экономика и P&L по направлениям</div>
-        <div class="product-result">P&L в разрезе направлений + реальная маржинальность с учётом налоговой нагрузки.</div>
-        <div class="product-price">₽200–400К<span>2–4 недели</span></div>
-        <div class="product-proof">«Считал себестоимость по продуктам и cost-центрам на производстве — умею разложить, где бизнес зарабатывает, а где теряет»</div>
+        <div class="product-pain">Шаг 3 · Принимать решения на данных</div>
+        <div class="product-name">Fractional CFO — сопровождение</div>
+        <div class="product-result">Причинный анализ поверх модели: почему меняется маржа, what-if сценарии, поддержка решений. CFO-уровень на долю ставки.</div>
+        <div class="product-price">Ежемесячно<span>условия — по итогам диагностики</span></div>
+        <div class="product-proof">«Действующий CFO международной компании — каждый месяц защищаю бюджет перед акционерами»</div>
       </div>
     </div>
   </div>
@@ -597,8 +603,8 @@
 <!-- MID CTA -->
 <div class="mid-cta">
   <div class="mid-cta__inner">
-    <p class="mid-cta__text">Первый шаг — Финансовый План-Разбор: 60 минут, бесплатно</p>
-    <a href="#cta" class="btn-primary" style="padding:11px 22px; font-size:14px;">Получить разбор и план →</a>
+    <p class="mid-cta__text">Первый шаг — диагностика финансовой инфраструктуры: 60 минут, бесплатно</p>
+    <a href="#cta" class="btn-primary" style="padding:11px 22px; font-size:14px;">Записаться на диагностику →</a>
   </div>
 </div>
 
@@ -614,29 +620,29 @@
       <div class="step reveal">
         <div class="step__num">01</div>
         <div>
-          <div class="step__title">Финансовый План-Разбор — 60 минут, бесплатно</div>
-          <div class="step__desc">Находим 3 скрытые точки, где утекает маржа или ликвидность, и вы получаете план, что чинить первым.</div>
+          <div class="step__title">Диагностика — 60 минут, бесплатно</div>
+          <div class="step__desc">Смотрим, где живут ваши данные, где они расходятся и что это стоит бизнесу. Вы получаете карту и план — что чинить первым.</div>
         </div>
       </div>
       <div class="step reveal">
         <div class="step__num">02</div>
         <div>
-          <div class="step__title">Входной продукт</div>
-          <div class="step__desc">Один из трёх продуктов выше — конкретный результат за фиксированную цену.</div>
+          <div class="step__title">Setup — единая модель данных</div>
+          <div class="step__desc">Связываю банки, CRM, склад и учёт в одну сверяемую модель: все юрлица, все валюты, цифры сходятся между собой.</div>
         </div>
       </div>
       <div class="step reveal">
         <div class="step__num">03</div>
         <div>
-          <div class="step__title">Дорожная карта</div>
-          <div class="step__desc">Что чинить и в каком порядке — письменно, с приоритетами.</div>
+          <div class="step__title">Причинный анализ поверх модели</div>
+          <div class="step__desc">Не «выручка упала», а почему: средний чек, конверсия, отток. Плюс what-if сценарии — что будет с кассой при каждом решении.</div>
         </div>
       </div>
       <div class="step reveal">
         <div class="step__num">04</div>
         <div>
-          <div class="step__title">По желанию — внедрение и сопровождение</div>
-          <div class="step__desc">Система учёта под ключ и регулярное финансовое управление.</div>
+          <div class="step__title">По желанию — Fractional CFO сопровождение</div>
+          <div class="step__desc">Регулярная поддержка решений на данных — CFO-уровень на долю ставки штатного финдиректора.</div>
           <span class="step__tag">Условия — по итогам диагностики</span>
         </div>
       </div>
@@ -648,39 +654,37 @@
 <section id="ai" class="section section--alt" data-screen-label="06 — AI-контур">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Почему это быстрее и дешевле штатного CFO</span>
-      <h2 class="h2">Рутину делает AI-агент. Решения принимаете вы</h2>
-      <p class="lead">Каждый продукт выше опирается на AI-контур: агент забирает на себя сверку, сбор данных и отслеживание сроков — то, на что у финансовой функции уходит больше всего часов. Так один эксперт покрывает объём работы целого отдела.</p>
+      <span class="eyebrow">Что вы на самом деле покупаете</span>
+      <h2 class="h2">Два слоя: инфраструктура данных и причинный анализ</h2>
+      <p class="lead">AI-инструменты для финансов работают только поверх готовой, сверенной отчётности — а у растущих компаний её обычно нет: данные разрознены. Поэтому сначала строится контекстный слой, и только потом на нём начинает работать анализ.</p>
     </div>
 
     <div class="ai-pipeline reveal">
-      <span class="ai-pipeline__step">Агент собирает данные</span>
+      <span class="ai-pipeline__step">Сырые данные: банки · CRM · склад · учёт</span>
       <span class="ai-pipeline__arrow">→</span>
-      <span class="ai-pipeline__step">сверяет и анализирует</span>
+      <span class="ai-pipeline__step">Слой 1 — единая сверяемая модель</span>
       <span class="ai-pipeline__arrow">→</span>
-      <span class="ai-pipeline__step">эскалирует аномалии</span>
+      <span class="ai-pipeline__step">Слой 2 — причинный анализ и what-if</span>
       <span class="ai-pipeline__arrow">→</span>
-      <span class="ai-pipeline__step">готовит рекомендацию</span>
-      <span class="ai-pipeline__arrow">→</span>
-      <span class="ai-pipeline__human">человек утверждает каждое решение</span>
+      <span class="ai-pipeline__human">решения принимаете вы</span>
     </div>
 
     <div class="ai-scenarios">
       <div class="ai-card reveal">
-        <h4>Дебиторка</h4>
-        <p>Агент сверяет банковские выписки и CRM с договорными отсрочками, заранее эскалирует риск разрыва по каждому крупному дебитору. Финансист получает готовую рекомендацию — утверждает или отклоняет.</p>
+        <h4>Слой 1 · Инфраструктура</h4>
+        <p>Сбор и связка сырых данных из банков, CRM, склада и учёта в единую модель, где цифры сходятся между собой. Все юрлица и валюты — в одной картине. Это фундамент: без него любой AI-анализ строится на песке.</p>
       </div>
       <div class="ai-card reveal">
-        <h4>Закрытие месяца</h4>
-        <p>Агент собирает первичку из разрозненных источников, сверяет с 1С, отдаёт человеку короткий список операций, которые требуют решения — вместо полного реестра.</p>
+        <h4>Слой 2 · Причинный анализ</h4>
+        <p>Не «выручка упала», а «выручка упала, потому что просел средний чек в этом канале». Анализ на уровне драйверов бизнеса — то, что не даёт ни бухгалтерия, ни готовые AI-инструменты.</p>
       </div>
       <div class="ai-card reveal">
-        <h4>Налоговые сроки и лимиты</h4>
-        <p>Агент отслеживает приближение к лимитам УСН и НДС по каждому юрлицу и календарь обязательных платежей, эскалирует заранее — до дедлайна, а не после штрафа.</p>
+        <h4>What-if моделирование</h4>
+        <p>Что будет с кассой и маржой, если поднять цены на 10%? Открыть юрлицо в Dubai? Нанять пять человек? Сценарии считаются на вашей модели — до того, как решение принято.</p>
       </div>
       <div class="ai-card reveal">
-        <h4>План-факт по направлениям</h4>
-        <p>Агент ежемесячно сравнивает план и факт по каждому направлению, флагует те, где маржа отклонилась от модели, и готовит гипотезы причин — человек проверяет и решает.</p>
+        <h4>Финансы, готовые к AI</h4>
+        <p>Итог — не «автоматизировали то, что делали руками», а данные, на которых AI-трансформация бизнеса становится возможной: от отчётности для инвесторов до агентов, работающих на вашей модели.</p>
       </div>
     </div>
 
@@ -725,7 +729,7 @@
       <image-slot id="face-photo" class="face-photo" shape="rounded" radius="14" src="photo.png" placeholder="Фото Максима"></image-slot>
       <div>
         <div class="face-name">Максим Петухов</div>
-        <div class="face-role">Архитектора финансов</div>
+        <div class="face-role">Fractional CFO · финансовая инфраструктура</div>
         <p class="face-bio">Работаю напрямую с собственниками — без прослойки в виде аккаунт-менеджеров и без корпоративного сленга. Деньги — тема, которая требует доверия, а не рекламы.</p>
       </div>
     </div>
@@ -761,7 +765,7 @@
           <span class="faq-btn__text">Покажете, где плохо, а дальше я сам?</span>
           <div class="faq-icon"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         </button>
-        <div class="faq-body" id="faq1-body" role="region" aria-labelledby="faq1-btn">Нет: после диагностики — дорожная карта с приоритетами, и по желанию вариант сопровождения. Диагностика — это начало, не финал.</div>
+        <div class="faq-body" id="faq1-body" role="region" aria-labelledby="faq1-btn">Можно и так: после диагностики у вас в любом случае останется карта разрывов и план с приоритетами. Setup и сопровождение — по желанию, диагностика — это начало, не крючок.</div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-btn" aria-expanded="false" aria-controls="faq2-body" id="faq2-btn">
@@ -775,14 +779,21 @@
           <span class="faq-btn__text">Чем это отличается от аутсорс-бухгалтерии?</span>
           <div class="faq-icon"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         </button>
-        <div class="faq-body" id="faq3-body" role="region" aria-labelledby="faq3-btn">Бухгалтерия ведёт учёт задним числом. Здесь — архитектура, которая держит маржу и ликвидность вперёд.</div>
+        <div class="faq-body" id="faq3-body" role="region" aria-labelledby="faq3-btn">Бухгалтерия ведёт учёт задним числом — фиксирует, что уже случилось. Здесь строится система, которая работает вперёд: связанные данные, причины изменений, сценарии до принятия решения.</div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-btn" aria-expanded="false" aria-controls="faq4-body" id="faq4-btn">
           <span class="faq-btn__text">Почему не нанять штатного финдиректора?</span>
           <div class="faq-icon"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         </button>
-        <div class="faq-body" id="faq4-body" role="region" aria-labelledby="faq4-btn">Штатный CFO такого уровня стоит кратно дороже и нужен не каждому объёму бизнеса. Здесь — тот же уровень экспертизы на долю ставки.</div>
+        <div class="faq-body" id="faq4-body" role="region" aria-labelledby="faq4-btn">Штатный финдир ведёт процессы, но редко строит систему данных с нуля — это другая компетенция. Плюс CFO такого уровня стоит кратно дороже и нужен не каждому объёму бизнеса. Здесь — сначала инфраструктура, потом CFO-уровень поддержки решений на долю ставки.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-btn" aria-expanded="false" aria-controls="faq5-body" id="faq5-btn">
+          <span class="faq-btn__text">Чем это отличается от AI-инструментов для финансов?</span>
+          <div class="faq-icon"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-body" id="faq5-body" role="region" aria-labelledby="faq5-btn">Готовые AI-инструменты анализируют уже собранную и сверенную отчётность — а у растущих компаний её обычно нет. Здесь сначала строится контекстный слой из сырых данных (банки, CRM, склад, учёт), и уже на нём работает причинный анализ. Без этого слоя AI отвечает «что произошло», но не «почему».</div>
       </div>
     </div>
   </div>
@@ -792,50 +803,48 @@
 <section id="cta" class="cta-section" data-screen-label="11 — Форма">
   <div class="container">
     <div class="cta-box reveal">
-      <div class="cta-box__title">Финансовый План-Разбор вашего бизнеса</div>
-      <p class="cta-box__sub">60 минут, бесплатно. Вы уйдёте с 3 скрытыми точками утечки маржи и планом, что чинить первым — независимо от того, продолжим мы работать или нет.</p>
+      <div class="cta-box__title">Диагностика финансовой инфраструктуры</div>
+      <p class="cta-box__sub">60 минут, бесплатно. Вы уйдёте с картой: где ваши данные расходятся, что это стоит бизнесу и что чинить первым — независимо от того, продолжим мы работать или нет.</p>
 
       <div class="scarcity-note">
         <span class="scarcity-note__dot"></span>
-        <p><strong>Про количество мест.</strong> На разборе я лично погружаюсь в архитектуру каждого бизнеса — без ассистентов и скриптов. Физически это не больше <strong>4–5 компаний в неделю</strong>. Если свободных слотов на эту неделю не останется — предложу ближайшее время на следующей.</p>
+        <p><strong>Про количество мест.</strong> На диагностике я лично погружаюсь в структуру данных каждого бизнеса — без ассистентов и скриптов. Физически это не больше <strong>4–5 компаний в неделю</strong>. Если свободных слотов на эту неделю не останется — предложу ближайшее время на следующей.</p>
       </div>
 
       <form id="contactForm" novalidate>
         <div class="form-field">
           <label class="form-label" for="name">Имя *</label>
-          <input class="form-input" type="text" id="name" name="name" placeholder="Как вас зовут" required minlength="2">
+          <input class="form-input" type="text" id="name" name="name" placeholder="Как вас зовут" required minlength="2" aria-describedby="nameError">
+          <div class="form-error" id="nameError" hidden>Укажите имя — минимум 2 символа</div>
         </div>
         <div class="form-field">
           <label class="form-label" for="contact">Email или телефон *</label>
-          <input class="form-input" type="text" id="contact" name="contact" placeholder="Как с вами связаться" required minlength="6">
+          <input class="form-input" type="text" id="contact" name="contact" placeholder="Как с вами связаться" required minlength="6" aria-describedby="contactError">
+          <div class="form-error" id="contactError" hidden>Укажите email или телефон — минимум 6 символов</div>
         </div>
         <div class="form-field">
-          <span class="form-legend">Текущий оборот бизнеса в год</span>
-          <div class="form-chips" id="revenueChips" role="radiogroup" aria-label="Текущий оборот бизнеса в год">
-            <label class="form-chip"><input type="radio" name="revenue" value="До 10 млн ₽"><span>До 10 млн ₽</span></label>
-            <label class="form-chip"><input type="radio" name="revenue" value="10–50 млн ₽"><span>10–50 млн ₽</span></label>
-            <label class="form-chip"><input type="radio" name="revenue" value="Более 50 млн ₽"><span>Более 50 млн ₽</span></label>
-          </div>
-        </div>
-        <div class="form-field">
-          <span class="form-legend">Какая финансовая проблема горит сильнее всего?</span>
-          <div class="form-chips" id="painChips" role="radiogroup" aria-label="Какая финансовая проблема горит сильнее всего">
+          <span class="form-legend">Что сейчас болит сильнее всего?</span>
+          <div class="form-chips" id="painChips" role="radiogroup" aria-label="Что сейчас болит сильнее всего">
+            <label class="form-chip"><input type="radio" name="pain" value="Данные разрознены — нет единой картины"><span>Данные разрознены — нет единой картины</span></label>
+            <label class="form-chip"><input type="radio" name="pain" value="Не понимаю, почему меняется прибыль"><span>Не понимаю, почему меняется прибыль</span></label>
+            <label class="form-chip"><input type="radio" name="pain" value="Несколько юрлиц/юрисдикций — нет сводной картины"><span>Несколько юрлиц/юрисдикций — нет сводной картины</span></label>
             <label class="form-chip"><input type="radio" name="pain" value="Кассовые разрывы"><span>Кассовые разрывы</span></label>
-            <label class="form-chip"><input type="radio" name="pain" value="Не понимаю реальную прибыль"><span>Не понимаю реальную прибыль</span></label>
-            <label class="form-chip"><input type="radio" name="pain" value="Налоги съедают маржу"><span>Налоги съедают маржу</span></label>
-            <label class="form-chip"><input type="radio" name="pain" value="Дебиторка растёт, деньги зависли"><span>Дебиторка растёт, деньги зависли</span></label>
-            <label class="form-chip"><input type="radio" name="pain" value="Не могу планировать дальше месяца"><span>Не могу планировать дальше месяца</span></label>
-            <label class="form-chip"><input type="radio" name="pain" value="Учёт разрознен — нет единой картины"><span>Учёт разрознен — нет единой картины</span></label>
+            <label class="form-chip"><input type="radio" name="pain" value="Отчётность не готова для инвесторов"><span>Отчётность не готова для инвесторов</span></label>
+            <label class="form-chip"><input type="radio" name="pain" value="Хочу использовать AI, но данные не готовы"><span>Хочу использовать AI, но данные не готовы</span></label>
           </div>
         </div>
         <div class="form-field">
           <label class="form-label" for="context">О бизнесе (необязательно)</label>
           <textarea class="form-input" id="context" name="context" rows="3" placeholder="Сфера, размер, что сейчас болит в финансах"></textarea>
         </div>
-        <button type="submit" class="form-submit">Получить разбор и план</button>
+        <button type="submit" class="form-submit">Записаться на диагностику</button>
+        <div class="form-error form-error--global" id="formStatus" hidden>Не удалось отправить заявку. Проверьте соединение и попробуйте ещё раз.</div>
       </form>
 
-      <p class="form-alt">или напишите на почту <a href="mailto:petukhov.m@gmail.com">petukhov.m@gmail.com</a></p>
+      <div class="form-success" id="formSuccess" hidden>
+        <div class="form-success__title">Заявка отправлена ✓</div>
+        <p class="form-success__text">Я отвечу вам в течение рабочего дня и предложу слот для диагностики.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -845,11 +854,10 @@
 <footer class="footer">
   <div class="footer__inner">
     <span class="footer__name">Максим Петухов</span>
-    <a class="footer__email" href="mailto:petukhov.m@gmail.com">petukhov.m@gmail.com</a>
   </div>
 </footer>
 
-<div class="sticky-cta"><a href="#cta">Получить разбор и план</a></div>
+<div class="sticky-cta"><a href="#cta">Записаться на диагностику</a></div>
 
 <!-- TWEAKS -->
 <div class="tweaks-panel" id="tweaksPanel" role="dialog" aria-label="Tweaks">
@@ -908,29 +916,57 @@
     });
   });
 
-  /* form -> telegram / mailto */
+  /* form -> email via FormSubmit */
   const form=document.getElementById('contactForm');
-  form.addEventListener('submit', e=>{
+  const formStatus=document.getElementById('formStatus');
+  const setFieldError=(inputId, errorId, hasError)=>{
+    form.querySelector(inputId).style.borderColor = hasError ? '#B4433A' : '';
+    document.getElementById(errorId).hidden = !hasError;
+  };
+  form.addEventListener('submit', async e=>{
     e.preventDefault();
+    formStatus.hidden=true;
     const name=form.querySelector('#name').value.trim();
     const contact=form.querySelector('#contact').value.trim();
     const context=form.querySelector('#context').value.trim();
-    if(name.length<2 || contact.length<6){
-      form.querySelector('#name').style.borderColor = name.length<2 ? '#B4433A' : '';
-      form.querySelector('#contact').style.borderColor = contact.length<6 ? '#B4433A' : '';
+    const nameBad=name.length<2, contactBad=contact.length<6;
+    setFieldError('#name','nameError',nameBad);
+    setFieldError('#contact','contactError',contactBad);
+    if(nameBad || contactBad){
+      form.querySelector(nameBad ? '#name' : '#contact').focus();
       return;
     }
-    let msg = `Заявка на Финансовый План-Разбор\nИмя: ${name}\nКонтакт: ${contact}`;
-    const revenue = form.querySelector('input[name="revenue"]:checked');
     const pain = form.querySelector('input[name="pain"]:checked');
-    if(revenue) msg += `\nОборот: ${revenue.value}`;
-    if(pain) msg += `\nГлавная боль: ${pain.value}`;
-    if(context) msg += `\nО бизнесе: ${context}`;
-    const url = `https://t.me/maximpetukhov?text=${encodeURIComponent(msg)}`;
-    window.open(url, '_blank');
+    const btn=form.querySelector('.form-submit');
+    btn.disabled=true; btn.textContent='Отправляю…';
+    try{
+      const res = await fetch('https://formsubmit.co/ajax/petukhov.m@gmail.com',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({
+          _subject:'Заявка на диагностику — maximpetukhov.com',
+          _template:'table',
+          'Имя':name,
+          'Контакт':contact,
+          'Главная боль':pain ? pain.value : '—',
+          'О бизнесе':context || '—'
+        })
+      });
+      if(!res.ok) throw new Error('send failed');
+      form.hidden=true;
+      document.getElementById('formSuccess').hidden=false;
+      if(typeof ym==='function') ym(110726258,'reachGoal','form_submit');
+    }catch(err){
+      formStatus.hidden=false;
+      btn.disabled=false; btn.textContent='Записаться на диагностику';
+    }
   });
   form.querySelectorAll('.form-input').forEach(inp=>{
-    inp.addEventListener('input', ()=>{ inp.style.borderColor=''; });
+    inp.addEventListener('input', ()=>{
+      inp.style.borderColor='';
+      const err=document.getElementById(inp.id+'Error');
+      if(err) err.hidden=true;
+    });
   });
 
   /* tweaks panel wiring */
